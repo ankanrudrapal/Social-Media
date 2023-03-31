@@ -1,0 +1,70 @@
+
+.register {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 30%;
+    height: 85%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+
+    .up {
+      margin: 10px;
+    }
+
+    .box {
+      height: 400px;
+      padding: 50px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+
+      .boxInput {
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        font-size: 15px;
+        padding-left: 20px;
+      }
+
+      .boxInput:focus {
+        outline: none;
+      }
+
+      .btn {
+        width: 50%;
+        height: 40px;
+        align-self: center;
+        border-radius: 10px;
+        border: none;
+        background-color: #42b72a;
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+        
+        .loginBtn {
+          width: 30%;
+          height: 35px;
+          align-self: center;
+          border-radius: 10px;
+          border: none;
+          background-color: #1775ee;
+          color: white;
+          font-size: 20px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+

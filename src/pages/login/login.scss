@@ -1,0 +1,99 @@
+@import "../../style.scss";
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 70%;
+    height: 70%;
+    display: flex;
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      .logo {
+        font-size: 50px;
+        font-weight: 800;
+        color: #1775ee;
+        margin-bottom: 10px;
+      }
+      .desc {
+        font-size: 24px;
+        width: 90%;
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+       }
+
+      .box {
+        height: 300px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+        .boxInput {
+          height: 50px;
+          border-radius: 10px;
+          border: 1px solid gray;
+          font-size: 18px;
+          padding-left: 20px;
+        }
+
+        .boxInput:focus {
+          outline: none;
+        }
+
+        .loginBtn {
+          height: 50px;
+          border-radius: 10px;
+          border: none;
+          background-color: #1775ee;
+          color: white;
+          font-size: 25px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+
+        .forgot {
+          text-align: center;
+          color: #1775ee;
+        }
+
+        .registerBtn {
+          width: 50%;
+          height: 50px;
+          align-self: center;
+          border-radius: 10px;
+          border: none;
+          background-color: #42b72a;
+          color: white;
+          font-size: 20px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
